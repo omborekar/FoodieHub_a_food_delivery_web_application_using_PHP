@@ -1,0 +1,120 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #ff5722;
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-buttons span {
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.navbar .nav-buttons button {
+    padding: 8px 14px;
+    margin: 0 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar .nav-buttons button:hover {
+    background-color: #e64a19;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-container label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container .submit-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.form-container .submit-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar .nav-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

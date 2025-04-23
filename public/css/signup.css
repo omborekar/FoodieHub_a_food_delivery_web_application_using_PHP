@@ -1,0 +1,136 @@
+/* General Styles for Signup Page */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Signup Form */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e04343;
+}
+
+/* Role and Admin Secret Code Section */
+label {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Styling Radio Buttons */
+.role-section {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  display: none; /* Hide the default radio buttons */
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 35px; /* Space for the custom radio button */
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  user-select: none;
+  margin-bottom: 0; /* Align radio buttons in a single line */
+}
+
+/* Custom Radio Button Circle */
+input[type="radio"] + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ff4d4d;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Checked Radio Button Style */
+input[type="radio"]:checked + label::before {
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+/* Hover Effect for Radio Buttons */
+input[type="radio"]:hover + label::before {
+  border-color: #e04343;
+}
+
+/* Admin Code Section */
+#adminCode {
+  display: none;
+}
+
+#adminCode input {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* OTP Form */
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-inputs input {
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}

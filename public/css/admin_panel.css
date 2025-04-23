@@ -1,0 +1,134 @@
+
+/* Global Reset for Containers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures all elements take padding/margin into account */
+}
+/* Container Styling */
+.container {
+  width: 90%; /* Limit width to 90% of the screen */
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  margin: 20px auto; /* Center the container horizontally with some spacing */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visual appeal */
+  border-radius: 8px;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Table and Content Layout Adjustments */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+/* View Items Row (Order Items Section) */
+.order-items {
+  display: none;
+  background-color: #fff;
+  color: #333;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.order-items ul {
+  margin: 0;
+  padding: 10px 20px;
+  list-style-type: disc;
+}
+
+.order-items strong {
+  font-size: 16px;
+  color: #ff5722;
+}
+
+/* Button Styling */
+button,
+a.action-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin: 6px 4px;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  min-width: 120px;  /* Make buttons more consistent in size */
+}
+
+/* View Items Button Styling */
+.toggle-btn {
+  background-color: #2196f3;
+  color: white;
+  border: 1px solid #1e88e5;
+}
+
+.toggle-btn:hover {
+  background-color: #1976d2;
+}
+
+.action-btn {
+  background-color: #4caf50; /* Green color */
+}
+
+.action-btn:hover {
+  background-color: #388e3c;
+}
+
+.out-for-delivery-btn {
+  background-color: #ff9800; /* Orange color */
+}
+
+.out-for-delivery-btn:hover {
+  background-color: #fb8c00;
+}
+
+.delivered-btn {
+  background-color: #8bc34a; /* Light green */
+}
+
+.delivered-btn:hover {
+  background-color: #7cb342;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  /* Container Adjustments */
+  .container {
+    width: 95%; /* Make it even narrower on mobile */
+    padding: 15px;
+  }
+
+  /* Stack Buttons in Smaller View */
+  td button,
+  td a.action-btn {
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+  }
+  
+  /* Make sure the toggle button and items are properly displayed */
+  .order-items {
+    display: block;  /* Ensure items are visible */
+  }
+}

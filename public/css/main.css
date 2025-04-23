@@ -1,0 +1,176 @@
+/* General Styling for Body and Navbar */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 6px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: #d32f2f;
+}
+
+/* Menu Section Styling */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Creates a responsive grid */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image is contained without distortion */
+}
+
+.menu-content {
+  padding: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #00a220;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.tag.non-veg {
+  background-color: #8b0000;
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.cart-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #ccc;
+}
+
+.add-btn {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.no-items {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  padding: 20px;
+}
+
+/* Floating Go to Cart Button */
+.floating-cart-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: linear-gradient(90deg, #ff6a00, #ee0979) !important;
+  padding: 12px 25px;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.floating-cart-btn:hover {
+  background-color: #d32f2f;
+}
+
+.cart-btn {
+  font-size: 16px;
+}

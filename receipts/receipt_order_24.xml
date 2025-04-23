@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="receipt_template.xsl"?>
+<receipt>
+  <order_id>24</order_id>
+  <user>om Sunil Borekar</user>
+  <payment_method>COD</payment_method>
+  <order_date>2025-04-19 23:58:54</order_date>
+  <items>
+    <item>
+      <name>Paneer Tikka Masala</name>
+      <quantity>1</quantity>
+      <unit_price>150.00</unit_price>
+      <total_price>150.00</total_price>
+    </item>
+    <item>
+      <name>Paneer Pizza</name>
+      <quantity>1</quantity>
+      <unit_price>230.00</unit_price>
+      <total_price>230.00</total_price>
+    </item>
+    <item>
+      <name>Pakora</name>
+      <quantity>1</quantity>
+      <unit_price>70.00</unit_price>
+      <total_price>70.00</total_price>
+    </item>
+    <item>
+      <name>Chocolate Brownie with Ice Cream</name>
+      <quantity>1</quantity>
+      <unit_price>150.00</unit_price>
+      <total_price>150.00</total_price>
+    </item>
+    <item>
+      <name>Chocolate Lava Cake</name>
+      <quantity>1</quantity>
+      <unit_price>120.00</unit_price>
+      <total_price>120.00</total_price>
+    </item>
+    <item>
+      <name>Classic Burger</name>
+      <quantity>1</quantity>
+      <unit_price>90.00</unit_price>
+      <total_price>90.00</total_price>
+    </item>
+  </items>
+  <subtotal>810.00</subtotal>
+  <gst>97.20</gst>
+  <delivery>20.00</delivery>
+  <other>0.00</other>
+  <grand_total>927.20</grand_total>
+</receipt>
