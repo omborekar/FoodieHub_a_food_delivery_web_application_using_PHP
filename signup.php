@@ -7,8 +7,8 @@ require 'vendor/autoload.php';
 
 // Gmail SMTP Settings
 define('SMTP_HOST', 'smtp.gmail.com');
-define('SMTP_USER', 'omborekar18@gmail.com');  // Replace with your Gmail
-define('SMTP_PASS', 'jlbrgligfiypkzxs'); // Replace with your App Password
+define('SMTP_USER', 'User_Mail');  // Replace with your Gmail
+define('SMTP_PASS', 'User_pass'); // Replace with your App Password
 
 // DB connection
 $conn = new mysqli("localhost", "root", "", "foodiehub");
